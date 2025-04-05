@@ -67,7 +67,9 @@
                 const xn = x % boardSpace
                 const ym = Math.floor(y / boardSpace)
                 const yn = y % boardSpace
+                // 当前落子横坐标
                 const xx = boardSpace - xn >= xn ? xm * boardSpace : (xm + 1) * boardSpace
+                // 当前落子纵坐标
                 const yy = boardSpace - yn >= yn ? ym * boardSpace : (ym + 1) * boardSpace
                 // 
                 const isRepeat= arr.some(ele => {
